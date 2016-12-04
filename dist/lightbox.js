@@ -2,8 +2,8 @@
 // Lightbox
 //
 // @author DxF5H
-// @version 0.9.6
-// @url https://github.com/DxF5H/Lightbox
+// @version 0.9.7
+// @url https://github.com/DxF5H/lightbox
 //
 // MIT License
 // ----------------------------------------
@@ -547,9 +547,11 @@
     // Setup
     // ------
 
-    var setup = function (selector) {
+    var setup = function (selector, userOptions) {
       // Merge user options into defaults
-      mergeOptions(userOptions, options);
+      if (userOptions) {
+        mergeOptions(userOptions, options);
+      }
 
       // Get a list of all elements within the document
       var elements = document.querySelectorAll(selector);
@@ -589,7 +591,7 @@
     };
 
 
-    setup(selector);
+    setup(selector, userOptions);
   };
 
   return lightbox;
