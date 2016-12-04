@@ -2,6 +2,8 @@
 
 Simple lightbox script without dependencies (not even jQuery).
 
+[Play on CodePen](https://codepen.io/DxF5H/pen/pNaQGq)
+
 ## Installation
 
 Simple include `lightbox.css` and `lightbox.js` to your page.
